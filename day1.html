@@ -443,6 +443,47 @@ CSS grid <br>
 CSS Grid Layout
 The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
 <!-- html layout end -->
+<!-- HTML Responsive Web Design step start  -->
+Setting The Viewport <br>
+To create a responsive website, add the following &#60;meta&#62; tag to all your web pages: <br>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+Responsive Images <br>
+Responsive images are images that scale nicely to fit any browser size. <br>
+Using the width Property
+If the CSS width property is set to 100%, the image will be responsive and scale up and down: <br>
+<!-- <img src="img_girl.jpg" style="width:100%;"> -->
+Using the max-width Property
+If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size: <br>
+<!-- <img src="img_girl.jpg" style="max-width:100%;height:auto;"> -->
+
+Show Different Images Depending on Browser Width <br>
+The HTML &#60;picture&#62; element allows you to define different images for different browser window sizes. <br>
+Resize the browser window to see how the image below changes depending on the width: <br>
+<!-- <picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture> -->
+Responsive Text Size <br>
+The text size can be set with a "vw" unit, which means the "viewport width". <br>
+That way the text size will follow the size of the browser window: <br>
+<!-- <h1 style="font-size:10vw">Hello World</h1> -->
+
+Media Queries <br>
+In addition to resize text and images, it is also common to use media queries in responsive web pages. <br>
+With media queries you can define completely different styles for different browser sizes. <br>
+<!-- <style>
+    /*  it is used head section.Use a media query to add a breakpoint at 800px: */
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+    </style> -->
+    Responsive Web Design - Frameworks <br>
+All popular CSS Frameworks offer responsive design. <br>
+They are free, and easy to use. <br>
 
 </body>
 </html>
