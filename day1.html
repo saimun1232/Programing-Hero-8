@@ -507,14 +507,105 @@ They are free, and easy to use. <br>
 </p>
 <!-- var tag -->
 <p>The HTML var element  is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italic. its a inline element
-    <p>The area of a triangle is: 1/2 x 
-        <var>b</var> x 
-        <var>h</var>, where 
-        <var>b</var> is the base, and 
-        <var>h</var> is the vertical height.</p>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
 </p>
 <!-- html computer code end-->
+<!-- html semantic elemetnt start -->
+<!-- Semantic elements = elements with a meaning. -->
+<!-- header -->
+<header style="border: 5px solid black;">
+    HTML &#60;header&#62; Element
+        The &#60;header&#62; element represents a container for introductory content or a set of navigational links. block element
+        A &#60;header&#62; element typically contains: <br>
+        one or more heading elements (&#60;h1&#62; - &#60;h6&#62;)
+        logo or icon
+        authorship information <br>
+        Note: You can have several &#60;header&#62; elements in one HTML document. However, &#60;header&#62;cannot be placed within a &#60;footer&#62;, &#60;address&#62; or another &#60;header&#62; element.
+        <!-- nav -->
+        <nav  style="border: 5px solid rgb(255, 234, 0);">
+            The &#60;nav&#62;element defines a set of navigation links. its a block element.Notice that NOT all links of a document should be inside a &#60;nav&#62; element. The &#60;nav&#62; element is intended only for major blocks of navigation links. <br>
+            Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+        </nav>
+</header>
+<!-- main -->
+<main style="border: 5px solid rgb(0, 255, 153);">
+    Definition and Usage <br>
+The &#60;main&#62; tag specifies the main content of a document. main tag is  unique whole website.its a block element <br>
+The content inside the&#60;main&#62; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms. <br>
+Note: There must not be more than one &#60;main&#62; element in a document. The &#60;main&#62; element must NOT be a descendant of an &#60;article&#62;, &#60;aside&#62;, &#60;footer&#62;, &#60;header&#62;, or&#60;nav&#62; element.
+<!-- section -->
+<section style="border: 5px solid rgb(255, 0, 51);">
+    The &#60;section&#62; element defines a section in a document.
+<br>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading." <br>
+        
+        Examples of where a &#60;section&#62; element can be used: <br>
+        Chapters <br>
+        Introduction <br>
+        News items <br>
+        Contact information <br>
+        A web page could normally be split into sections for introduction, content, and contact information.
+        <!-- article -->
+        <article style="border: 5px solid #000dff;">
+            The  &#60;article&#62; element specifies independent, self-contained content. <br>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site. <br>
+                Examples of where the <article> element can be used:
+                Forum posts <br>
+                Blog posts <br>
+                User comments <br>
+                Product cards <br>
+                Newspaper articles
+        </article>
+        <!-- aside -->
+        <aside style="border: 5px solid #ff8800;">
+            The &#60;aside&#62; element defines some content aside from the content it is placed in (like a sidebar). <br>The &#60;aside&#62; content should be indirectly related to the surrounding content. its a block element. used for aside of a web page.
+        </aside>
+</section>
+</main>
+<!-- footer element -->
+<footer style="border: 5px solid rgb(26, 255, 0);">
+    The &#60;footer&#62;element defines a footer for a document or section. <br>
+A &#60;footer&#62; element typically contains: <br>
+        authorship information <br>
+        copyright information <br>
+        contact information <br>
+        sitemap <br>
+        back to top links <br>
+        related documents <br>
+        You can have several &#60;footer&#62; elements in one document.
+        <!-- nav -->
+        <nav  style="border: 5px solid rgb(255, 234, 0);">
+            The &#60;nav&#62;element defines a set of navigation links. its a block element.Notice that NOT all links of a document should be inside a &#60;nav&#62; element. The &#60;nav&#62; element is intended only for major blocks of navigation links. <br>
+            Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+        </nav>
+</footer>
+<!-- figure/figcaption  -->
+<!-- HTML <figure> and <figcaption> Elements
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings,  its a block element .etc.
 
+The <figcaption> .its a  block element .tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.
+
+The <img> element defines the actual image/illustration.  -->
+<figure>
+    <img src="images/blood.svg" alt="Trulli">
+    <figcaption>Fig1. -Donate Your blood to save a life.</figcaption>
+  </figure>
+  <!-- summery element -->
+  <summary>
+    See more..is a block element
+    <details>
+        details element is block element.it used for show summery details . <br>
+        The &#60;summary&#62; tag defines a visible heading for the &#60;details&#62; element. The heading can be clicked to view/hide the details. <br>
+Note: The &#60;summary&#62;element should be the first child element of the &#60;details&#62;element.
+    </details>
+  </summary>
+  <!-- mark -->
+  <mark>The &#60;mark&#62; tag defines text that should be marked or highlighted.</mark>
+  <!-- time -->
+  The &#60;time&#62;tag defines a specific time (or datetime). is a inline element <br>
+The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results. <br>
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+<!-- html semantic elemetnt end -->
 
 </body>
 </html>
