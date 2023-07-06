@@ -152,11 +152,44 @@ _top - Opens the document in the full body of the window -->
 <!-- img link -->
 <a href="default.asp">
     <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
-    </a>Create a Bookmark in HTML <br>
+    </a><br>
+    Create a Bookmark in HTML <br>
     Bookmarks can be useful if a web page is very long. <br>
     To create a bookmark - first create the bookmark, then add a link to it. <br>
     When the link is clicked, the page will scroll down or up to the location with the bookmark. <br>
-    using id attribute
+    using id attribute <br>
+
 <!-- html links end -->
+<!-- image strat -->
+image tag is inline element.used for show image in website.
+have a src/height/width/alt/title/ is used for image tag. <br>
+image format jpg,png,apng,jpeg,svg,ico,gif <br><br>
+<img src="images/icon4.svg" title="this is a icon image" width="100px" height="100px" alt="icon4">
+<img src="images/icon5.svg" title="this is a icon image" width="100px" height="100px" alt="icon4">
+<!-- image map -->
+With HTML image maps, you can create clickable areas on an image <br>
+Image Maps
+The HTML &#60;map&#62; tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more &#60;area&#62; tags.is a block element <br>
+<img src="images/bus.svg" alt="Workplace" usemap="#workmap">
+<!-- usemap value is same value of map name attribute -->
+<map name="workmap">
+      <!-- pair one for the x-axis and one for the y-axis.34 left margin,44 top margin -->
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com">
+<!-- To add a circle area, first locate the coordinates of the center of the circle:
+
+337,300
+radious  -->
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <!-- The shape="poly" contains several coordinate points, which creates a shape formed with straight lines (a polygon). -->
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map><br>
+<!-- picture element -->
+The HTML <picture> element allows you to display different pictures for different devices or screen sizes.its a block element  <br>
+    <picture>
+        <source media="(min-width: 650px)" srcset="images/icon5.svg">
+        <source media="(min-width: 465px)" srcset="images/icon4.svg">
+        <img src="images/bus.svg">
+      </picture>
+<!-- image end -->
 </body>
 </html>
