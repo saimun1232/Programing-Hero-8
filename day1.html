@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <!-- The HTML <head> Element
-The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.HTML metadata is data about the HTML document. Metadata is not displayed.Metadata typically define the document title, character set, styles, scripts, and other meta information. -->
+The <head> element is a container for metadata (data about data) and is placed between the <html> tag and before the <body> tag.HTML metadata is data about the HTML document. Metadata is not displayed.Metadata typically define the document title, character set, styles, scripts, and other meta information. -->
 <head>
     <!-- The HTML <meta> Element
 The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services. -->
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8"><!--stands for "UCS (Unicode) Transformation Format"-->
+    <meta name="keywords" content="html css tutorial for beginer">
     <meta name="author" content="Saimun Islam">
     <meta http-equiv="refresh" content="15">
     <meta name="description" content="Free Web tutorials">
@@ -33,19 +33,19 @@ th:nth-child(even),td:nth-child(even) {
     <title>Day1</title>
     <!-- favicon added -->
     <link rel="shortcut icon" href="images/icon8.svg" type="image/x-icon">
-    <!-- The HTML <script> ElementThe <script> element is used to define client-side JavaScripts.
-The following JavaScript writes "Hello JavaScript!" into an HTML element with id="demo": -->
-<script></script>
+    <!-- The HTML <script> ElementThe <script> element is used to define client-side JavaScripts. -->
+<script type="" src=""></script>
+<noscript></noscript>
 <!-- The HTML <base> Element
 The <base> element specifies the base URL and/or target for all relative URLs in a page.The <base> tag must have either an href or a target attribute present, or both.There can only be one single <base> element in a document! -->
-<base href="#empty element">
+<base href="images/">
 </head>
 <body>
     <!-- html introduction start -->
     What is HTML?<hr>
 HTML stands for Hyper Text Markup Language <br>
-HTML is the standard markup language for creating Web pages <br>
-HTML describes the structure of a Web page <br>
+for creating Web pages <br>
+ the structure of a Web page <br>
 HTML consists of a series of elements <br>
 HTML elements tell the browser how to display the content <br>
 HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc. <br>
@@ -62,16 +62,16 @@ Attributes provide additional information about elements <br>
 Attributes are always specified in the start tag <br>
 Attributes usually come in name/value pairs like: name="value" <br>
     <!-- html heading tag start -->
-    <h1>this a  block element and used for heading a paragraph</h1>
-    <h2>this a  block element and used for heading a paragraph</h2>
-    <h3>this a  block element and used for heading a paragraph</h3>
-    <h4>this a  block element and used for heading a paragraph</h4>
-    <h5>this a  block element and used for heading a paragraph</h5>
-    <h6>this a  block element and used for heading a paragraph</h6>
+    <h1>this a  block element and used for heading a paragraph. its also help accesability</h1>
+    <h2>this a  block element and used for heading a paragraph. its also help accesability</h2>
+    <h3>this a  block element and used for heading a paragraph. its also help accesability</h3>
+    <h4>this a  block element and used for heading a paragraph. its also help accesability</h4>
+    <h5>this a  block element and used for heading a paragraph. its also help accesability</h5>
+    <h6>this a  block element and used for heading a paragraph. its also help accesability</h6>
     <!-- html heading tag end  -->
     <!-- html paragraph/hr/br/pre is start -->
     <p>this is block element .it used for write a paragraph.</p> <br> <!--br means break.it id empty element.it means line break-->
-    <p>this is block element .it used for write a paragraph.</p> <hr> <!--hr means break. it is a empty element.it means horizontal rule-->
+    <p>this is block element .it used for write a paragraph.</p> <hr> <!--hr. it is a empty element.it means horizontal rule-->
     <pre>
        pre tag is a block element .
 
@@ -94,7 +94,7 @@ Formatting elements were designed to display special types of text:
 <p>used for<sub>Subscript text</sub> this a inline element</p><br>
 <p> used for<sup> Superscript text</sup>this is a inline element</p><br>
 <!-- formating tag end -->
-<!-- HTML Quotation and Citation Elements start -->
+<!-- HTML blockquote/q/abb/address/cite/bdo Elements start -->
 <p>Here is a quote from WWF's website:</p>
 <!-- blockquote -->
 <blockquote cite="http://www.worldwildlife.org/who/index.html">this element is a block element.used for quote tex external source. this tag also refer site name by cite attribute.
@@ -124,7 +124,7 @@ HTML Comment Tag
 <!-- Write your comments here/Add Comments/Hide Content/Hide Inline Content -->
 <!-- color tutorial start -->
 <p>
-    HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values. <br>
+    HTML colors are specified with predefined color names, or with RGB, #HEX, HSL, RGBA, or HSLA values. <br>
     Color Names <br>
     Color Values <br>
     <pre>
@@ -132,6 +132,7 @@ HTML Comment Tag
         Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
         #ff6347 <br>
         Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+        hex digit :0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F
         hsl(9, 100%, 64%) <br>
         Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. <br>
     Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color. <br>
@@ -170,13 +171,8 @@ a:active {}
 <!-- /* html style end */ -->
 
 <!-- /* html links start */ -->
-HTML Links - Hyperlinks <br>
-HTML links are hyperlinks. <br>
-
-You can click on a link and jump to another document. <br>
-
-When you move the mouse over a link, the mouse arrow will turn into a little hand. <br>
-<!-- /* a means anchor.its have href/title/target attribute */ -->
+HTML Links - Hyperlinks <br>HTML links are hyperlinks. <br>You can click on a link and jump to another document. <br>When you move the mouse over a link, the mouse arrow will turn into a little hand. <br>
+<!-- /* a-means anchor.its have href/title/target attribute */ -->
 <!-- target attribute can have one of the following values:
 
 _self - Default. Opens the document in the same window/tab as it was clicked
@@ -186,20 +182,24 @@ _top - Opens the document in the full body of the window -->
 <a href="#" title="" target="">this is  inline element. used for link internal and extenal webpages</a>
 <!-- img link -->
 <a href="default.asp">
-    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    <img src="images/icon4.svg" alt="HTML tutorial" style="width:42px;height:42px;">
     </a><br>
     Create a Bookmark in HTML <br>
     Bookmarks can be useful if a web page is very long. <br>
     To create a bookmark - first create the bookmark, then add a link to it. <br>
     When the link is clicked, the page will scroll down or up to the location with the bookmark. <br>
     using id attribute <br>
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+<p id="C10">Jump to Chapter 10</p>
 
 <!-- html links end -->
 <!-- image strat -->
 image tag is inline element.used for show image in website.
 have a src/height/width/alt/title/ is used for image tag. <br>
 image format jpg,png,apng,jpeg,svg,ico,gif <br><br>
-<img src="images/icon4.svg" title="this is a icon image" width="100px" height="100px" alt="icon4">
+<!-- <img longdesc="image related description is write here" ismap <!-- ismap attribute is show its coordinates poinnt-- src="images/icon4.svg" title="this is a icon image" width="100px" height="100px" alt="icon4" crossorigin="java te shikbo " usemap="#diye link kora " sizes="media queries a shikbo"
+    srcset="images/icon4.svg 100w,images/icon4.svg 500w"> -->
 <img src="images/icon5.svg" title="this is a icon image" width="100px" height="100px" alt="icon4">
 <!-- image map -->
 With HTML image maps, you can create clickable areas on an image <br>
@@ -214,9 +214,9 @@ The HTML &#60;map&#62; tag defines an image map. An image map is an image with c
 
 337,300
 radious  -->
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="290,172,10" alt="Phone" href="phone.htm">
   <!-- The shape="poly" contains several coordinate points, which creates a shape formed with straight lines (a polygon). -->
-  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+  <area shape="poly" coords="337,300,44,337,300,44,337,300,44" alt="Coffee" href="coffee.htm">
 </map><br>
 <!-- picture element -->
 The HTML <picture> element allows you to display different pictures for different devices or screen sizes.its a block element  <br>
@@ -309,7 +309,7 @@ visibility property
 background properties
 border properties -->
     <colgroup>
-      <col span="2" style="background-color: #D6EEEE">
+      <col span="2" style="width: auto;background-color: #D6EEEE">
     </colgroup>
     <tr>
     <th>MON</th>
@@ -361,7 +361,7 @@ border properties -->
     <!-- unorder list -->
     <ul>
         this a block element.used for unordered list.
-        have type attribute.attribute value is circle,square,none
+        have type attribute.attribute value is ,disc,circle,square,none
         <li>block element,used for show list item</li>
         <li>block element,used for show list item</li>
         <li>block element,used for show list item</li>
@@ -392,15 +392,15 @@ The &#60;dl&#62; tag defines the description list, the &#60;dt&#62; tag defines 
 A block-level element always starts on a new line, and the browsers  <br>automatically add some space (a margin) before and after the element. <br>
 A block-level element always takes up the full width available (stretches out to the left and right as far as it can). <br>
 <!-- block -->
-&#60;address&#62;,&#60;article&#62;,&#60;aside&#62;,&#60;blockquote&#62;,&#60;canvas&#62;,&#60;dl&#62;,&#60;dt&#62;,&#60;dd&#62;,&#60;ul&#62;,&#60;ol&#62;,&#60;li&#62;,&#60;p&#62;,&#60;div&#62;,&#60;header&#62;,&#60;main&#62;,&#60;section&#62;,&#60;aside&#62;,&#60;nav&#62;,&#60;footer&#62;,&#60;fieldset&#62;,&#60;figcaption&#62;,&#60;figure&#62;,&#60;h1&#62;-&#60;h6&#62;,&#60;table&#62;,
+&#60;address&#62;,&#60;article&#62;,&#60;aside&#62;,&#60;blockquote&#62;,&#60;canvas&#62;,&#60;dl&#62;,&#60;dt&#62;,&#60;dd&#62;,&#60;ul&#62;,&#60;ol&#62;,&#60;li&#62;,&#60;p&#62;,&#60;div&#62;,&#60;header&#62;,&#60;main&#62;,&#60;section&#62;,&#60;aside&#62;,&#60;nav&#62;,&#60;footer&#62;,&#60;fieldset&#62;,&#60;figcaption&#62;,&#60;figure&#62;,&#60;h1&#62;-&#60;h6&#62;,&#60;table&#62;,&#60;cite&#62;,
 &#60;tbody&#62;,&#60;tfoot&#62;,&#60;thead&#62;,&#60;pre&#62;,&#60;video&#62;,
-&#60;from&#62;,&#60;hr&#62;,&#60;noscript&#62;,
+&#60;from&#62;,&#60;hr&#62;,&#60;noscript&#62;,&#60;tr&#62;,
 <!-- inline -->
 Inline Elements <br>
 An inline element does not start on a new line. <br>
 An inline element only takes up as much width as necessary. <br>
 Note: An inline element cannot contain a block-level element! <br>
-&#60;a&#62;,&#60;audio&#62;,&#60;b&#62;,&#60;i&#62;,&#60;strong&#62;,&#60;abbr&#62;,&#60;br&#62;,&#60;button&#62;,&#60;bdo&#62;,&#60;cite&#62;,&#60;code&#62;,&#60;acronym&#62;,&#60;big&#62;,&#60;dfn&#62;,&#60;em&#62;,&#60;img&#62;,&#60;input&#62;,&#60;kbd&#62;,&#60;map&#62;,&#60;oject&#62;,&#60;output&#62;,&#60;q&#62;,&#60;samp&#62;,&#60;script&#62;,&#60;small&#62;,
+&#60;a&#62;,&#60;audio&#62;,&#60;b&#62;,&#60;i&#62;,&#60;strong&#62;,&#60;abbr&#62;,&#60;br&#62;,&#60;button&#62;,&#60;bdo&#62;,&#60;code&#62;,&#60;acronym&#62;,&#60;big&#62;,&#60;dfn&#62;,&#60;em&#62;,&#60;img&#62;,&#60;input&#62;,&#60;kbd&#62;,&#60;map&#62;,&#60;oject&#62;,&#60;output&#62;,&#60;q&#62;,&#60;samp&#62;,&#60;script&#62;,&#60;small&#62;,
 &#60;time&#62;,&#60;textarea&#62;,&#60;sup&#62;,&#60;sub&#62;,&#60;span&#62;,
 &#60;tt&#62;,&#60;var&#62;,&#60;select&#62;,
 <br>
@@ -418,8 +418,7 @@ the html &#60;script&#62; tag: <br>
 the html &#60;script&#62; tag is used to define a client side script language <br>
 the &#60;script&#62; element either contains script statements , or it points to an external script file through the src attribute <br>
 common uses for javascript are image manipulation, form validation, and dynamic changes of content
-<br>
-to select an html element, javascript most often uses the <br>
+<br>to select an html element, javascript most often uses the <br>
 document.getElementById() method.
 <br>
 we write scipt tag head section and body end section. <br> its inline element .attribute async(first load html element),defer (first load javascript function),src(link external file), <br>
@@ -491,7 +490,7 @@ They are free, and easy to use. <br>
     <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
 </p>
 <!-- samp -->
-<>The HTML samp element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.
+<p>The HTML samp element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.
     <p>Message from my computer:</p>
     <!-- samp a block element used for sample code -->
 <samp>File not found.<br>Press F1 to continue</samp>
@@ -515,10 +514,11 @@ They are free, and easy to use. <br>
 <!-- header -->
 <header style="border: 5px solid black;">
     HTML &#60;header&#62; Element
-        The &#60;header&#62; element represents a container for introductory content or a set of navigational links. block element
+        The &#60;header&#62; element represents a container for introductory content or a set of navigational links. block element <br>
         A &#60;header&#62; element typically contains: <br>
-        one or more heading elements (&#60;h1&#62; - &#60;h6&#62;)
-        logo or icon
+        one or more heading elements <br>
+        (&#60;h1&#62; - &#60;h6&#62;)
+        logo or icon <br>
         authorship information <br>
         Note: You can have several &#60;header&#62; elements in one HTML document. However, &#60;header&#62;cannot be placed within a &#60;footer&#62;, &#60;address&#62; or another &#60;header&#62; element.
         <!-- nav -->
@@ -534,31 +534,31 @@ The &#60;main&#62; tag specifies the main content of a document. main tag is  un
 The content inside the&#60;main&#62; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms. <br>
 Note: There must not be more than one &#60;main&#62; element in a document. The &#60;main&#62; element must NOT be a descendant of an &#60;article&#62;, &#60;aside&#62;, &#60;footer&#62;, &#60;header&#62;, or&#60;nav&#62; element.
 <!-- section -->
-<section style="border: 5px solid rgb(255, 0, 51);">
-    The &#60;section&#62; element defines a section in a document.
+<article style="border: 5px solid rgb(255, 0, 51);">
+    The &#60;article&#62; element defines a section in a document.
 <br>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading." <br>
         
-        Examples of where a &#60;section&#62; element can be used: <br>
+        Examples of where a &#60;article&#62; element can be used: <br>
         Chapters <br>
         Introduction <br>
         News items <br>
         Contact information <br>
         A web page could normally be split into sections for introduction, content, and contact information.
         <!-- article -->
-        <article style="border: 5px solid #000dff;">
-            The  &#60;article&#62; element specifies independent, self-contained content. <br>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site. <br>
-                Examples of where the &#60;article&#62; element can be used:
+        <section style="border: 5px solid #000dff;">
+            The  &#60;section&#62; element specifies independent, self-contained content. <br>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site. <br>
+                Examples of where the &#60;section&#62; element can be used:
                 Forum posts <br>
                 Blog posts <br>
                 User comments <br>
                 Product cards <br>
                 Newspaper articles
-        </article>
+        </section>
         <!-- aside -->
         <aside style="border: 5px solid #ff8800;">
             The &#60;aside&#62; element defines some content aside from the content it is placed in (like a sidebar). <br>The &#60;aside&#62; content should be indirectly related to the surrounding content. its a block element. used for aside of a web page.
         </aside>
-</section>
+</article>
 </main>
 <!-- footer element -->
 <footer style="border: 5px solid rgb(26, 255, 0);">
@@ -590,10 +590,9 @@ The <img> element defines the actual image/illustration.  -->
   </figure>
   <!-- summery element -->
   <summary>
-    See more..is a block element
     <details>
         details element is block element.it used for show summery details . <br>
-        The &#60;summary&#62; tag defines a visible heading for the &#60;details&#62; element. The heading can be clicked to view/hide the details. <br>
+        The &#60;details&#62; tag defines a visible heading for the &#60;summery&#62; element. The heading can be clicked to view/hide the details. <br>
 Note: The &#60;summary&#62;element should be the first child element of the &#60;details&#62;element.
     </details>
   </summary>
@@ -606,6 +605,29 @@ The datetime attribute of this element is used translate the time into a machine
 
 <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
 <!-- html semantic elemetnt end -->
-
+<!-- style guidelin -->
+Always Declare Document Type <br>
+Use Lowercase Element Names <br>
+Close All HTML Elements <br>
+Use Lowercase Attribute Names <br>
+Always Quote Attribute Values <br>
+Always Specify alt, width, and height for Images <br>
+Spaces and Equal Signs <br>
+Avoid Long Code Lines <br>
+Blank Lines and Indentation <br>
+Never Skip the <title> Element <br>
+    Omitting &#60;html&#62;and &#60;body&#62; <br>
+    Omitting <head>? <br>
+        Close Empty HTML Elements? <br>
+        Add the lang Attribute <br>
+        Meta Data <br>
+        Setting The Viewport <br>
+        HTML Comments <br>
+        Using Style Sheets <br>
+        Loading JavaScript in HTML <br>
+        Accessing HTML Elements with JavaScript <br>
+        Use Lower Case File Names <br>
+        File Extensions <br>
+        <!-- html style guide is end -->
 </body>
 </html>
