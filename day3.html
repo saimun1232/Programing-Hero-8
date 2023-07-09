@@ -4,8 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html meadia tutorial note</title>
+    <style>
+        table{
+            border-collapse: collapse;
+                width: 100%;
+                background-color: antiquewhite;
+                text-align: center;
+        }
+        caption{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+        }
+    video{
+        border: none;
+        box-shadow: 8px 9px 12px red;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    </style>
 </head>
 <body>
-    
+    <!-- multimedia  -->
+    <p>What is Multimedia?
+        Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.</p>
+        <section>
+            <table>
+                <caption>Common Video Formats</caption>
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Format</th>
+                        <th style="width: 20%;">File</th>
+                        <th style="width: 80%;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MPEG</td>
+                        <td>.mpg <br>
+                            .mpeg</td>
+                        <td>MPEG. Developed by the Moving Pictures Expert Group. The first popular video format on the web. Not supported anymore in HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>AVI</td>
+                        <td>.avi</td>
+                        <td>AVI (Audio Video Interleave). Developed by Microsoft. Commonly used in video cameras and TV hardware. Plays well on Windows computers, but not in web browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>WMV</td>
+                        <td>.wmv</td>
+                        <td>WMV (Windows Media Video). Developed by Microsoft. Commonly used in video cameras and TV hardware. Plays well on Windows computers, but not in web browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>QuickTime</td>
+                        <td>mov</td>
+                        <td>QuickTime. Developed by Apple. Commonly used in video cameras and TV hardware. Plays well on Apple computers, but not in web browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>RealVideo</td>
+                        <td>.rm
+                            .ram</td>
+                        <td>RealVideo. Developed by Real Media to allow video streaming with low bandwidths. Does not play in web browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>Flash</td>
+                        <td>.swf
+                            .flv</td>
+                        <td>Flash. Developed by Macromedia. Often requires an extra component (plug-in) to play in web browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>Ogg</td>
+                        <td>.ogg</td>
+                        <td>Theora Ogg. Developed by the Xiph.Org Foundation. Supported by HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>WebM</td>
+                        <td>.webm</td>
+                        <td>WebM. Developed by Mozilla, Opera, Adobe, and Google. Supported by HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>MPEG-4
+                            or MP4</td>
+                        <td>.mp4</td>
+                        <td>MP4. Developed by the Moving Pictures Expert Group. Commonly used in video cameras and TV hardware. Supported by all browsers and  recommended by YouTube. </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        Note: Only MP4, WebM, and Ogg video are supported by the HTML standard
+        Common Audio Formats
+MP3 is the best format for compressed recorded music. The term MP3 has become synonymous with digital music.
+
+If your website is about recorded music, MP3 is the choice.
+
+Format	File	Description
+MIDI	.mid
+.midi	MIDI (Musical Instrument Digital Interface). Main format for all electronic music devices like synthesizers and PC sound cards. MIDI files do not contain sound, but digital notes that can be played by electronics. Plays well on all computers and music hardware, but not in web browsers.
+RealAudio	.rm
+.ram	RealAudio. Developed by Real Media to allow streaming of audio with low bandwidths. Does not play in web browsers.
+WMA	.wma	WMA (Windows Media Audio). Developed by Microsoft. Plays well on Windows computers, but not in web browsers.
+AAC	.aac	AAC (Advanced Audio Coding). Developed by Apple as the default format for iTunes. Plays well on Apple computers, but not in web browsers.
+WAV	.wav	WAV. Developed by IBM and Microsoft. Plays well on Windows, Macintosh, and Linux operating systems. Supported by HTML.
+Ogg	.ogg	Ogg. Developed by the Xiph.Org Foundation. Supported by HTML.
+MP3	.mp3	MP3 files are actually the sound part of MPEG files. MP3 is the most popular format for music players. Combines good compression (small files) with high quality. Supported by all browsers.
+MP4	.mp4	MP4 is a video format, but can also be used for audio. Supported by all browsers.
+Note: Only MP3, WAV, and Ogg audio are supported by the HTML standard.
+<!-- The HTML <video> Element
+To show a video in HTML, use the <video> element: -->
+    <video width="320" height="240" controls muted>
+        <source src="video/Git and Github bangla tutorial 15 _ git pull and push.mp4" type="video/mp4"><br>
+      Your browser does not support the video tag.
+      </video>
+
+      <video width="320" height="240" controls muted src="video/Git and Github bangla tutorial 15 _ git pull and push.mp4" type="video/ogg"></video>
+      <video width="320" height="240" controls muted src="video/Git and Github bangla tutorial 15 _ git pull and push.mp4" type="video/ogg"></video>
+      <video width="320" height="240" controls muted src="video/Git and Github bangla tutorial 15 _ git pull and push.mp4" type="video/ogg"></video><br>
+      <!-- The HTML <audio> Element
+To play an audio file in HTML, use the <audio> element: -->
+    <audio controls muted >
+        <source src="video/hi.mp3" type="audio/mp3"><br>
+        <source src="video/hi.mp3" type="audio/mp3"><br>
+        <source src="video/hi.mp3" type="audio/mp3"><br>
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <audio controls muted src="video/hi.mp3" type="audio/mp3" ></audio>
+      <audio controls muted src="video/hi.mp3" type="audio/mp3" ></audio>
+      <audio controls muted src="video/hi.mp3" type="audio/mp3" ></audio>
+      <audio controls muted src="video/hi.mp3" type="audio/mp3" ></audio>
+      <!-- The <object> Element
+The <object> element is supported by all browsers.
+
+The <object> element defines an embedded object within an HTML document.
+
+It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML: -->
+<object width="100%" height="500px" data="http://127.0.0.1:5500/day2.html"></object>
+<object width="100%" height="1000px" data="Shortcuts blende keymap.pdf"></object>
+<!-- The <embed> Element
+The <embed> element is supported in all major browsers.
+
+The <embed> element also defines an embedded object within an HTML document.
+
+Web browsers have supported the <embed> element for a long time. However, it has not been a part of the HTML specification before HTML5. -->
+<embed width="100%" height="1000px" src="Shortcuts blende keymap.pdf"></embed>
+<!-- add youtube  video  with iframe -->
+<iframe width="500px" height="500px" src="https://www.youtube.com/embed/D3f_vBLzyqE" autoplay="0" muted="0" loop="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="500px" height="500px" src="https://www.youtube.com/embed/D3f_vBLzyqE" autoplay="0" muted="0" loop="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="500px" height="500px" src="https://www.youtube.com/embed/D3f_vBLzyqE" autoplay="0" muted="0" loop="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>
